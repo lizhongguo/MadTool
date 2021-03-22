@@ -1,0 +1,5 @@
+markdown
+pyqt5==5.15.2
+PyQtWebEngine==5.15.2
+pyqt5-tools
+pymdown-extensions
