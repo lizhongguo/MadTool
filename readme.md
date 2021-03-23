@@ -1,2 +1,3 @@
-pip install -r requirements.txt
-python Window.py
+`pip install -r requirements.txt`
+
+`python Window.py`
