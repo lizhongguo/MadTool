@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWebEngineWidgets, QtWidgets
 
 class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
+    def setupUi(self, MainWindow:QtWidgets.QMainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(502, 481)
         font = QtGui.QFont()
@@ -85,3 +85,13 @@ class Ui_MainWindow(object):
         self.actionOpen_Folder.setText(_translate("MainWindow", "Open Folder"))
         self.actionSave.setText(_translate("MainWindow", "Save"))
         self.actionQuit.setText(_translate("MainWindow", "Quit"))
+
+    def test(self):
+        doc = self.textEdit.document()
+        formats = doc.allFormats()
+        QtGui.QTextFormat.CharFormat
+        block = doc.firstBlock()
+        textlist = block.textList()
+        textlist.formatIndex()
+        formats.__getitem__[1]
+        block = block.next()
